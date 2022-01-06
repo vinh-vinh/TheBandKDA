@@ -1,0 +1,60 @@
+/* 
+PC:>=1024px;
+Tablet:>=740px &<1024px
+Mobile:<740px
+
+*/
+
+/* PC */
+@media (min-width:1024px) {
+
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width:1023px) {
+
+}
+
+/* mobile */
+@media(max-width:739px){
+     #nav {
+        display: block;
+    }
+    #nav >li {
+        display:block;
+        
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+
+    }
+    #nav .subnav a{
+        color: aliceblue;
+        padding: 5px 37px;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #header .search-btn{
+        display: none;
+    }
+    #header .mobile-menu-btn{
+        display: block;
+    }
+
+    #content .member-img{
+        width: 60%;
+    }
+    .s-col-full{
+        width: 100%;
+    }
+
+    
+
+
+
+
+
+
+}
