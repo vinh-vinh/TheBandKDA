@@ -36,6 +36,9 @@ html{
 }
 .mt-32{
     margin-top: 32px !important;
+}
+.mt-64{
+    margin-top: 64px !important;
 
 }
 
@@ -51,6 +54,9 @@ html{
 
 .col-third{
     width:calc(100%/3) ;
+}
+.col-four{
+    width:calc(100%/4) ;
 }
 .col-full{
     width: 100%;
@@ -68,9 +74,9 @@ html{
     text-align: center !important;
 }
 
-#main{
+/* #main{
 
-}
+} */
 
 #header{
     height: 46px;
@@ -80,9 +86,20 @@ html{
     left: 0px;
     right: 0px;
     z-index: 1;
+    display:flex;
+    justify-content: space-between;
+   
     
-
-
+}
+#header .logo-img-header{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 8%;
+}
+#header .logo-img-header .logo-img{
+    width: 100%;
 }
 
 #header .mobile-menu-btn{
@@ -194,9 +211,25 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('../img/chicago.jpg') top center / cover  no-repeat ;
+    background: url('../img/band.jpg') top center / cover  no-repeat ;
+   
+}
+#slider .text-content .logo-slider--img{
+    width: 80%;
+    transition: width  0.5s;
+}
+#slider .text-content .logo-slider--img:hover{
+    cursor: pointer;
+    
+    width: 85%;
+}
+
+
+#slider .logo-slidert{
+    position:absolute;
     
 }
+
 
 #slider .text-content{
     position: absolute;
@@ -220,10 +253,10 @@ html{
 }
 
 
-#content{
+/* #content{
 
 
-}
+} */
 
 #content .content-section{
     width: 800px;
@@ -278,6 +311,12 @@ html{
     margin-top: 15px;
     width: 154px;
     border-radius: 4px;
+    transition:0.5s ease-in-out;
+}
+#content .member-img:hover{
+    cursor: pointer;
+    width:200px;
+    
 }
 
 
@@ -378,10 +417,10 @@ html{
 
 
 
-#footer{
+/* #footer{
 
 
-}
+} */
 
 
 .modal{
